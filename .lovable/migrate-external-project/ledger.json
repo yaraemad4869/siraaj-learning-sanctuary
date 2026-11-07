@@ -1,0 +1,19 @@
+{
+  "source": "https://github.com/yaraemad4869/elegant-hijab-styling",
+  "source_kind": "github",
+  "capabilities": [
+    { "capability": "application code and pages", "source": "GitHub repository", "outcome": "Recreate the requested Arabic Siraj academy home experience in the current TanStack project.", "status": "in_progress", "next_action": "Implement the requested Islamic geometric visual treatment and verify the home page." },
+    { "capability": "database schema", "source": "External Siraj API; no schema or table export attached", "outcome": "Migration to Lovable Cloud remains pending; the visual request does not include schema/data migration.", "status": "pending", "next_action": "After preview, request sanitized CSV/JSON exports and determine the original data model before migrating." },
+    { "capability": "application records", "source": "External Siraj API; no records export attached", "outcome": "Existing records are not included in this preview.", "status": "pending", "next_action": "After preview, request filtered CSV/JSON exports for the application's existing records." },
+    { "capability": "authentication identities", "source": "External Siraj API; no user export attached", "outcome": "Existing sign-in is not part of the requested visual change and is not migrated here.", "status": "pending", "next_action": "Request user identity export after preview before planning account migration." },
+    { "capability": "authorization and roles", "source": "Siraj API roles for students, guardians, teachers, and administrators", "outcome": "No authorization migration performed for this visual-only request.", "status": "pending", "next_action": "Map and verify roles and data ownership when the account/data migration is requested." },
+    { "capability": "uploaded file bytes", "source": "Bundled local image and video assets", "outcome": "Bundled display assets will be retained in the project.", "status": "in_progress", "next_action": "Keep only assets used by the recreated home page." },
+    { "capability": "external providers", "source": "Siraj API at siraaj.runasp.net; payment methods exposed by that API", "outcome": "Provider cutover is outside the requested visual change; no provider credentials or payment flows are changed.", "status": "pending", "next_action": "Preserve the current provider until a separately scoped backend migration and verification." },
+    { "capability": "public endpoints", "source": "TanStack proxy for /api/public/backend/*", "outcome": "No public endpoint changes are requested.", "status": "preserved", "next_action": "Retain existing source behavior if its application routes are later brought over." },
+    { "capability": "callbacks and webhooks", "source": "Not detected in the inspected source", "outcome": "None identified.", "status": "not_applicable", "next_action": "None." },
+    { "capability": "schedules", "source": "Not detected in the inspected source", "outcome": "None identified.", "status": "not_applicable", "next_action": "None." },
+    { "capability": "secrets and environment variables", "source": "Optional VITE_API_BASE_URL; no secret values supplied", "outcome": "No credentials copied or requested.", "status": "preserved", "next_action": "Set the public API base URL in project settings only if a deployment needs a non-default endpoint." },
+    { "capability": "cutover", "source": "Existing GitHub deployment/service", "outcome": "No production cutover performed.", "status": "pending", "next_action": "Keep the existing service intact until data, accounts, and external payment paths are deliberately migrated." },
+    { "capability": "verification", "source": "Current Lovable preview", "outcome": "Pending implementation and preview checks.", "status": "pending", "next_action": "Verify the visible home page at desktop and mobile sizes." }
+  ]
+}
