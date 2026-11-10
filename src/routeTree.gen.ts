@@ -9,27 +9,307 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as SubscribeRouteImport } from './routes/subscribe'
+import { Route as TeacherRouteImport } from './routes/teacher'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as RegisterIndexRouteImport } from './routes/register.index'
+import { Route as RegisterChildRouteImport } from './routes/register.child'
+import { Route as ApiPublicBackendSplatRouteImport } from './routes/api/public/backend/$'
 
-export interface FileRoutesByFullPath {}
-export interface FileRoutesByTo {}
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SubscribeRoute = SubscribeRouteImport.update({
+  id: '/subscribe',
+  path: '/subscribe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeacherRoute = TeacherRouteImport.update({
+  id: '/teacher',
+  path: '/teacher',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegisterIndexRoute = RegisterIndexRouteImport.update({
+  id: '/register/',
+  path: '/register/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegisterChildRoute = RegisterChildRouteImport.update({
+  id: '/register/child',
+  path: '/register/child',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBackendSplatRoute = ApiPublicBackendSplatRouteImport.update({
+  id: '/api/public/backend/$',
+  path: '/api/public/backend/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+
+export interface FileRoutesByFullPath {
+  '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/dashboard': typeof DashboardRoute
+  '/faq': typeof FaqRoute
+  '/login': typeof LoginRoute
+  '/privacy': typeof PrivacyRoute
+  '/reviews': typeof ReviewsRoute
+  '/subscribe': typeof SubscribeRoute
+  '/teacher': typeof TeacherRoute
+  '/terms': typeof TermsRoute
+  '/register/child': typeof RegisterChildRoute
+  '/register/': typeof RegisterIndexRoute
+  '/api/public/backend/$': typeof ApiPublicBackendSplatRoute
+}
+export interface FileRoutesByTo {
+  '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/dashboard': typeof DashboardRoute
+  '/faq': typeof FaqRoute
+  '/login': typeof LoginRoute
+  '/privacy': typeof PrivacyRoute
+  '/reviews': typeof ReviewsRoute
+  '/subscribe': typeof SubscribeRoute
+  '/teacher': typeof TeacherRoute
+  '/terms': typeof TermsRoute
+  '/register/child': typeof RegisterChildRoute
+  '/register': typeof RegisterIndexRoute
+  '/api/public/backend/$': typeof ApiPublicBackendSplatRoute
+}
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/dashboard': typeof DashboardRoute
+  '/faq': typeof FaqRoute
+  '/login': typeof LoginRoute
+  '/privacy': typeof PrivacyRoute
+  '/reviews': typeof ReviewsRoute
+  '/subscribe': typeof SubscribeRoute
+  '/teacher': typeof TeacherRoute
+  '/terms': typeof TermsRoute
+  '/register/child': typeof RegisterChildRoute
+  '/register/': typeof RegisterIndexRoute
+  '/api/public/backend/$': typeof ApiPublicBackendSplatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: never
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/dashboard'
+    | '/faq'
+    | '/login'
+    | '/privacy'
+    | '/reviews'
+    | '/subscribe'
+    | '/teacher'
+    | '/terms'
+    | '/register/child'
+    | '/register/'
+    | '/api/public/backend/$'
   fileRoutesByTo: FileRoutesByTo
-  to: never
-  id: '__root__'
+  to:
+    | '/'
+    | '/admin'
+    | '/dashboard'
+    | '/faq'
+    | '/login'
+    | '/privacy'
+    | '/reviews'
+    | '/subscribe'
+    | '/teacher'
+    | '/terms'
+    | '/register/child'
+    | '/register'
+    | '/api/public/backend/$'
+  id:
+    | '__root__'
+    | '/'
+    | '/admin'
+    | '/dashboard'
+    | '/faq'
+    | '/login'
+    | '/privacy'
+    | '/reviews'
+    | '/subscribe'
+    | '/teacher'
+    | '/terms'
+    | '/register/child'
+    | '/register/'
+    | '/api/public/backend/$'
   fileRoutesById: FileRoutesById
 }
-export interface RootRouteChildren {}
-
-declare module '@tanstack/react-router' {
-  interface FileRoutesByPath {}
+export interface RootRouteChildren {
+  IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
+  DashboardRoute: typeof DashboardRoute
+  FaqRoute: typeof FaqRoute
+  LoginRoute: typeof LoginRoute
+  PrivacyRoute: typeof PrivacyRoute
+  ReviewsRoute: typeof ReviewsRoute
+  SubscribeRoute: typeof SubscribeRoute
+  TeacherRoute: typeof TeacherRoute
+  TermsRoute: typeof TermsRoute
+  RegisterChildRoute: typeof RegisterChildRoute
+  RegisterIndexRoute: typeof RegisterIndexRoute
+  ApiPublicBackendSplatRoute: typeof ApiPublicBackendSplatRoute
 }
 
-const rootRouteChildren: RootRouteChildren = {}
+declare module '@tanstack/react-router' {
+  interface FileRoutesByPath {
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/subscribe': {
+      id: '/subscribe'
+      path: '/subscribe'
+      fullPath: '/subscribe'
+      preLoaderRoute: typeof SubscribeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/teacher': {
+      id: '/teacher'
+      path: '/teacher'
+      fullPath: '/teacher'
+      preLoaderRoute: typeof TeacherRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/register/': {
+      id: '/register/'
+      path: '/register'
+      fullPath: '/register/'
+      preLoaderRoute: typeof RegisterIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/register/child': {
+      id: '/register/child'
+      path: '/register/child'
+      fullPath: '/register/child'
+      preLoaderRoute: typeof RegisterChildRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/backend/$': {
+      id: '/api/public/backend/$'
+      path: '/api/public/backend/$'
+      fullPath: '/api/public/backend/$'
+      preLoaderRoute: typeof ApiPublicBackendSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+  }
+}
+
+const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
+  DashboardRoute: DashboardRoute,
+  FaqRoute: FaqRoute,
+  LoginRoute: LoginRoute,
+  PrivacyRoute: PrivacyRoute,
+  ReviewsRoute: ReviewsRoute,
+  SubscribeRoute: SubscribeRoute,
+  TeacherRoute: TeacherRoute,
+  TermsRoute: TermsRoute,
+  RegisterChildRoute: RegisterChildRoute,
+  RegisterIndexRoute: RegisterIndexRoute,
+  ApiPublicBackendSplatRoute: ApiPublicBackendSplatRoute,
+}
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
