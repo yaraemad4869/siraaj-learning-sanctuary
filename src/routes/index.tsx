@@ -15,6 +15,13 @@ export const Route = createFileRoute("/")({
                 property: "og:description",
                 content: "احجز حلقاتك مع معلمي سِراج لتعليم القرآن الكريم والتجويد والعلوم الشرعية، بباقات مرنة تناسب الأطفال والكبار.",
             },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
+            { name: "twitter:title", content: "سِراج | تعليم القرآن والعلوم الشرعية أونلاين" },
+            {
+                name: "twitter:description",
+                content: "احجز حلقاتك مع معلمي سِراج لتعليم القرآن الكريم والتجويد والعلوم الشرعية، بباقات مرنة تناسب الأطفال والكبار.",
+            },
         ],
     }),
     component: Landing,
