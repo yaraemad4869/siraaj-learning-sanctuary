@@ -46,8 +46,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             { name: "twitter:site", content: "@Lovable" },
             { name: "twitter:title", content: "سِراج | تعليم القرآن والعلوم الشرعية أونلاين" },
             { name: "twitter:description", content: "احجز حلقاتك مع معلمي سِراج لتعليم القرآن الكريم والتجويد والعلوم الشرعية، بباقات مرنة تناسب الأطفال والكبار." },
-            { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ab7625d-9039-4b80-94b8-70f78153ca5b/id-preview-5d5c6bb5--b4b7f247-004e-4bc0-9e9c-be32f2d3cbf2.lovable.app-1785248824243.png" },
-            { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ab7625d-9039-4b80-94b8-70f78153ca5b/id-preview-5d5c6bb5--b4b7f247-004e-4bc0-9e9c-be32f2d3cbf2.lovable.app-1785248824243.png" },
         ],
         links: [
             {
