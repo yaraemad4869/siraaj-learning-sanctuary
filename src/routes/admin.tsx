@@ -9,6 +9,8 @@ export const Route = createFileRoute("/admin")({
             { name: "description", content: "إدارة الباقات والبرامج والمعلمين ومحتوى منصة سِراج." },
             { property: "og:title", content: "لوحة الإدارة | سِراج" },
             { property: "og:description", content: "تحكم كامل في محتوى المنصة وبياناتها." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: () => (

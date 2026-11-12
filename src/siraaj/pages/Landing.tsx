@@ -1,5 +1,5 @@
 import { useNavigate } from '../router-compat'
-import { ArrowLeft, ArrowRight, Check, ClipboardCheck, Headphones, ShieldCheck, Sparkles } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, Check, ClipboardCheck, Headphones, ShieldCheck } from 'lucide-react'
 import { useApp } from '../context'
 import { packageIcon } from '../data'
 import { hasRealOriginalPrice, usdAmount } from '../price'
@@ -29,7 +29,7 @@ export default function Landing() {
             <Reveal>
             <div className="hero-image-shell">
               <img src={heroFamily} alt={t('أم وطفلتها تتعلمان القرآن عبر الإنترنت', 'A mother and daughter learning Quran online')} width={1408} height={1008} className="aspect-[7/5] w-full object-cover" />
-              <div className="hero-image-tag"><Sparkles size={16} />{t('تعليم مباشر وتفاعلي', 'Live, interactive learning')}</div>
+              <div className="hero-image-tag"><BookOpen size={16} />{t('تعليم مباشر وتفاعلي', 'Live, interactive learning')}</div>
             </div>
             </Reveal>
           </div>
@@ -174,7 +174,7 @@ export default function Landing() {
                 [ShieldCheck, t('جودة تعليمية عالية', 'High teaching quality')],
                 [Headphones, t('دعم مستمر', 'Continuous support')],
                 [ClipboardCheck, t('متابعة دورية', 'Regular progress reports')],
-                [Sparkles, t('مرونة في المواعيد', 'Flexible scheduling')],
+                [BookOpen, t('مرونة في المواعيد', 'Flexible scheduling')],
               ].map(([Icon, label]) => {
                 const BenefitIcon = Icon as typeof ShieldCheck
                 return <div key={String(label)} className="package-assurance"><BenefitIcon size={20} /><span>{label as string}</span></div>

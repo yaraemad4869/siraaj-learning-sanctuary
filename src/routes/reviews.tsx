@@ -9,6 +9,8 @@ export const Route = createFileRoute("/reviews")({
             { name: "description", content: "فيديوهات وشهادات حقيقية من طلاب سِراج وأولياء الأمور عن تجربتهم في حلقات القرآن والتجويد." },
             { property: "og:title", content: "آراء طلابنا | سِراج" },
             { property: "og:description", content: "شاهد تجارب طلابنا وأولياء الأمور مع منصة سِراج." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: () => (

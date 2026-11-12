@@ -9,6 +9,8 @@ export const Route = createFileRoute("/register/child")({
             { name: "description", content: "أضف بيانات طفلك ومواعيد حلقاته لإتمام الاشتراك في منصة سِراج." },
             { property: "og:title", content: "تسجيل بيانات الطفل | سِراج" },
             { property: "og:description", content: "خطوة أخيرة قبل تفعيل اشتراك طفلك." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: () => (

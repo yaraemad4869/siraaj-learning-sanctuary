@@ -8,6 +8,8 @@ export const Route = createFileRoute("/privacy")({
             { name: "description", content: "تعرف على كيفية جمع أكاديمية سراج لبياناتكم وحمايتها واستخدامها." },
             { property: "og:title", content: "سياسة الخصوصية | سِراج" },
             { property: "og:description", content: "كيف نتعامل مع بياناتكم ونحميها في أكاديمية سراج." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: Privacy,

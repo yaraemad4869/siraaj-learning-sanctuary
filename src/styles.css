@@ -582,7 +582,7 @@ select option {
 }
 
 .program-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     border-color: var(--primary);
 }
 
@@ -858,12 +858,12 @@ select option {
 
 /* ── طابع إسلامي: زخارف وأ ornament ── */
 .islamic-pattern-light {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%2344C3C6' stroke-opacity='0.09'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 33l2.6 6.4L51 42l-6.4 2.6L42 51l-2.6-6.4L33 42l6.4-2.6z'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%2344C3C6' stroke-opacity='0.09'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 30l3 9 9 3-9 3-3 9-3-9-9-3 9-3z'/><path d='M42 34l2 6 6 2-6 2-2 6-2-6-6-2 6-2z'/></g></svg>");
     background-size: 84px 84px;
 }
 
 .islamic-pattern-dark {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%23FFFFFF' stroke-opacity='0.06'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 33l2.6 6.4L51 42l-6.4 2.6L42 51l-2.6-6.4L33 42l6.4-2.6z'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%23FFFFFF' stroke-opacity='0.06'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 30l3 9 9 3-9 3-3 9-3-9-9-3 9-3z'/><path d='M42 34l2 6 6 2-6 2-2 6-2-6-6-2 6-2z'/></g></svg>");
     background-size: 84px 84px;
 }
 
@@ -897,17 +897,17 @@ select option {
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%2344C3C6' stroke-opacity='0.10'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 33l2.6 6.4L51 42l-6.4 2.6L42 51l-2.6-6.4L33 42l6.4-2.6z'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%2344C3C6' stroke-opacity='0.10'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 30l3 9 9 3-9 3-3 9-3-9-9-3 9-3z'/><path d='M42 34l2 6 6 2-6 2-2 6-2-6-6-2 6-2z'/></g></svg>");
     background-size: 84px 84px;
     mask-image: radial-gradient(130% 100% at 50% 0%, black 35%, transparent 95%);
-    animation: patternDrift 110s linear infinite;
+    animation: patternDrift 180s linear infinite;
 }
 
 .final-cta {
     background-color: var(--foreground);
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%23FFFFFF' stroke-opacity='0.05'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 33l2.6 6.4L51 42l-6.4 2.6L42 51l-2.6-6.4L33 42l6.4-2.6z'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%23FFFFFF' stroke-opacity='0.05'><path d='M42 8l9 9-9 9-9-9z'/><path d='M42 58l9 9-9 9-9-9z'/><path d='M8 42l9-9 9 9-9 9z'/><path d='M58 42l9-9 9 9-9 9z'/><circle cx='42' cy='42' r='7'/><path d='M42 30l3 9 9 3-9 3-3 9-3-9-9-3 9-3z'/><path d='M42 34l2 6 6 2-6 2-2 6-2-6-6-2 6-2z'/></g></svg>");
     background-size: 84px 84px;
-    animation: patternDrift 110s linear infinite;
+    animation: patternDrift 180s linear infinite;
 }
 
 .section-kicker {
@@ -965,12 +965,12 @@ select option {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 }
 
 .hero-image-shell img {
-    animation: heroFloat 7s ease-in-out infinite;
+    animation: heroFloat 12s ease-in-out infinite;
 }
 
 /* بطاقات ترتفع بسلاسة عند المرور عليها */
@@ -981,7 +981,7 @@ select option {
 
 .feature-card:hover,
 .package-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-3px);
     box-shadow: 0 18px 40px color-mix(in oklab, var(--primary) 16%, transparent);
 }
 
@@ -998,19 +998,7 @@ select option {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-8px);
-    }
-}
-
-@keyframes glowPulse {
-    0%,
-    100% {
-        opacity: 0.45;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.75;
-        transform: scale(1.08);
+        transform: translateY(-4px);
     }
 }
 
@@ -1058,8 +1046,7 @@ select option {
     color: var(--accent);
     opacity: 0.5;
     font-size: clamp(1.4rem, 2.4vw, 2rem);
-    animation: floatSoft 14s ease-in-out infinite;
-    text-shadow: 0 0 22px color-mix(in oklab, var(--accent) 45%, transparent);
+    animation: floatSoft 24s ease-in-out infinite;
 }
 
 .decor-char-a {
@@ -1086,30 +1073,6 @@ select option {
     animation-delay: 2.2s;
 }
 
-.decor-glow {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(70px);
-    animation: glowPulse 14s ease-in-out infinite;
-}
-
-.decor-glow-a {
-    top: -10%;
-    inset-inline-start: -8%;
-    width: 26rem;
-    height: 26rem;
-    background: color-mix(in oklab, var(--primary) 20%, transparent);
-}
-
-.decor-glow-b {
-    bottom: -12%;
-    inset-inline-end: -6%;
-    width: 22rem;
-    height: 22rem;
-    background: color-mix(in oklab, var(--accent) 16%, transparent);
-    animation-delay: 3s;
-}
-
 /* نسخة فاتحة للأقسام الداكنة */
 .decor-light svg {
     stroke: var(--primary-foreground);
@@ -1131,10 +1094,3 @@ select option {
     stroke: var(--primary-foreground);
 }
 
-.decor-light .decor-glow-a {
-    background: color-mix(in oklab, var(--primary) 30%, transparent);
-}
-
-.decor-light .decor-glow-b {
-    background: color-mix(in oklab, var(--accent) 22%, transparent);
-}
