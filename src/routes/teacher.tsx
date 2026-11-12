@@ -9,6 +9,8 @@ export const Route = createFileRoute("/teacher")({
             { name: "description", content: "تابع طلابك ومواعيد حلقاتك وحضورهم من لوحة المعلم في سِراج." },
             { property: "og:title", content: "لوحة المعلم | سِراج" },
             { property: "og:description", content: "جدول حلقاتك وطلابك في مكان واحد." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: () => (

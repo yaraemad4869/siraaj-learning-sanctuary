@@ -8,6 +8,8 @@ export const Route = createFileRoute("/faq")({
             { name: "description", content: "إجابات عن أكثر الأسئلة تكراراً حول حلقات سِراج ومواعيدها وطرق الدفع والخصومات." },
             { property: "og:title", content: "الأسئلة الشائعة | سِراج" },
             { property: "og:description", content: "كل ما تودّ معرفته قبل الانضمام إلى حلقات سِراج." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: Faq,

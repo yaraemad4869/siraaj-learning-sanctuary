@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
       <style>{`
         /* WhatsApp Button Container */
         .whatsapp-btn {
-          animation: float 2.5s ease-in-out infinite;
+          animation: float 8s ease-in-out infinite;
           /* تعديل الموقع ليكون على اليمين */
           right: 1.25rem; /* تم زيادتها من 1.25rem إلى 1.8rem تقريباً لتعويض التكبير */
           left: auto;
@@ -18,7 +18,7 @@ export default function WhatsAppButton() {
             transform: translateY(0px);
           }
           50% {
-            transform: translateY(-8px);
+            transform: translateY(-3px);
           }
         }
 
@@ -27,7 +27,7 @@ export default function WhatsAppButton() {
           width: 30px;
           height: 30px;
           fill: #fff;
-          animation: wiggle 0.8s ease-in-out infinite;
+          animation: wiggle 12s ease-in-out infinite;
         }
 
         @keyframes wiggle {
@@ -35,13 +35,13 @@ export default function WhatsAppButton() {
             transform: rotate(0deg);
           }
           25% {
-            transform: rotate(20deg);
+            transform: rotate(3deg);
           }
           50% {
             transform: rotate(0deg);
           }
           75% {
-            transform: rotate(-20deg);
+            transform: rotate(-3deg);
           }
         }
 
@@ -57,13 +57,13 @@ export default function WhatsAppButton() {
         .wave-1 {
           width: 80px;
           height: 80px;
-          animation: wavePulse 2s ease-out infinite;
+          animation: wavePulse 5s ease-out infinite;
         }
 
         .wave-2 {
           width: 100px;
           height: 100px;
-          animation: wavePulse 2s ease-out 0.6s infinite;
+          animation: wavePulse 5s ease-out 1.5s infinite;
         }
 
         @keyframes wavePulse {
@@ -80,7 +80,7 @@ export default function WhatsAppButton() {
         /* Hover effects */
         .whatsapp-btn:hover {
           /* التعديل هنا: إضافة translateX(-5px) لتحريكه 5 بكسل لليسار */
-          transform: scale(1.1) translateX(-5px) !important;
+          transform: scale(1.03) translateX(-2px) !important;
         }
 
         .whatsapp-btn:hover svg {

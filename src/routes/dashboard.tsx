@@ -9,6 +9,8 @@ export const Route = createFileRoute("/dashboard")({
             { name: "description", content: "تابع حلقاتك واشتراكك وتقدّمك الدراسي في منصة سِراج." },
             { property: "og:title", content: "لوحة الطالب | سِراج" },
             { property: "og:description", content: "كل بيانات حلقاتك في مكان واحد." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: () => (

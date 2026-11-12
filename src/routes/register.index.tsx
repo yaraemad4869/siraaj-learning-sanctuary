@@ -8,6 +8,8 @@ export const Route = createFileRoute("/register/")({
             { name: "description", content: "أنشئ حسابك في منصة سِراج كطالب أو ولي أمر وابدأ حلقاتك القرآنية." },
             { property: "og:title", content: "إنشاء حساب | سِراج" },
             { property: "og:description", content: "التسجيل في منصة سِراج يستغرق أقل من دقيقة." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary_large_image" },
         ],
     }),
     component: Register,
